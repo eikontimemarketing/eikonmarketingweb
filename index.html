@@ -2904,5 +2904,39 @@ document.addEventListener('visibilitychange', () => {
 </script>
 
 
+<!-- REPASSE DE RASTREAMENTO PARA O FORMULARIO (CRM)
+     Leva utm_source, utm_medium, utm_campaign, utm_term, utm_content, fbclid e gclid
+     do endereco desta pagina para os links do formulario em eikonappinterno.online/f/.
+     O formulario do CRM le esses parametros do proprio endereco. O ultimo conjunto fica
+     guardado no navegador por 30 dias, para quem volta ao site sem passar pelo anuncio.
+     Qualquer falha deixa os links como estao: nada mais na pagina depende deste bloco. -->
+<script>
+(function () {
+  try {
+    var CHAVES = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'fbclid', 'gclid'];
+    var NOME = 'eikon_rastreio', VALIDADE = 30 * 864e5;
+    var atual = new URLSearchParams(location.search), dados = {}, veioComRastreio = false;
+    CHAVES.forEach(function (k) {
+      var v = atual.get(k);
+      if (v) { dados[k] = v.slice(0, 300); veioComRastreio = true; }
+    });
+    try {
+      if (veioComRastreio) localStorage.setItem(NOME, JSON.stringify({ em: Date.now(), dados: dados }));
+      else {
+        var guardado = JSON.parse(localStorage.getItem(NOME) || 'null');
+        if (guardado && guardado.dados && Date.now() - guardado.em < VALIDADE) dados = guardado.dados;
+      }
+    } catch (e) { /* navegador sem armazenamento (modo privado): segue so com o endereco atual */ }
+    document.querySelectorAll('a[href^="https://eikonappinterno.online/f/"]').forEach(function (a) {
+      var u = new URL(a.href);
+      CHAVES.forEach(function (k) {
+        if (typeof dados[k] === 'string' && dados[k] && !u.searchParams.has(k)) u.searchParams.set(k, dados[k]);
+      });
+      a.href = u.toString();
+    });
+  } catch (e) { /* de proposito: se algo falhar, os links ficam exatamente como estavam */ }
+})();
+</script>
+
 </body>
 </html>
