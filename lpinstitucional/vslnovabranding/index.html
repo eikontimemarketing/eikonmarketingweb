@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<script>document.documentElement.classList.replace('no-js','js');</script>
+
+<!-- ═══ TRACKING ═══════════════════════════════════════════════ -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Z9PZGKP');</script>
+<!-- Meta Pixel (async: não trava a renderização) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','200096279305740');
+fbq('track','PageView');
+</script>
+
+<!-- ═══ SEO / COMPARTILHAMENTO ═════════════════════════════════ -->
+<title>Eikon Ink Marketing — Agenda cheia todo mês, sem depender do boca a boca</title>
+<meta name="description" content="Assessoria de marketing feita só para tatuadores. Assista ao vídeo e agende sua análise estratégica gratuita.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#050505">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Eikon Ink Marketing">
+<meta property="og:title" content="Agenda cheia todo mês, sem depender do boca a boca">
+<meta property="og:description" content="Assessoria de marketing feita só para tatuadores. Agende sua análise estratégica gratuita.">
+<!-- TROQUE: adicione aqui <meta property="og:image" content="URL 1200x630 no seu domínio"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23050505'/%3E%3Ctext x='50' y='66' font-family='Arial' font-size='56' font-weight='700' fill='%23fafafa' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+
+<!-- ═══ PERFORMANCE: conexões antecipadas ══════════════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   1. TOKENS
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  /* Fundos: escada de 3 (página / seção / card) — nunca #000 puro */
+  --bg:#050505; --bg-2:#0b0b0c; --bg-3:#131315;
+  /* Texto */
+  --fg:#fafafa; --fg-2:#d4d4d8; --muted:#a3a3a3; --muted-2:#8b8b8b;
+  /* Bordas em 3 níveis (acento da marca = branco) */
+  --line-s:rgba(255,255,255,.08); --line-m:rgba(255,255,255,.16); --line-l:rgba(255,255,255,.40);
+  --danger:#f87171;
+  /* Forma */
+  --r-card:16px; --r-block:24px; --r-pill:9999px;
+  /* Movimento: só duas curvas */
+  --ease:cubic-bezier(.4,0,.2,1); --expo:cubic-bezier(.16,1,.3,1);
+  /* Tipografia */
+  --font-d:'Space Grotesk',system-ui,sans-serif;
+  --font-b:'Inter',system-ui,-apple-system,sans-serif;
+  /* Espaço */
+  --gutter:clamp(1.25rem,4vw,2rem);
+  --sec:clamp(4.5rem,10vw,8.5rem);          /* entre seções: 72px mobile → 136px desktop */
+  --after-title:clamp(2.25rem,5vw,4rem);    /* depois do título de seção */
+  --nav-h:64px;
+  /* Larguras por tipo de conteúdo: quanto mais textual, mais estreita */
+  --w-grid:1200px; --w-media:960px; --w-form:720px; --w-text:62ch;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   2. BASE
+   ═══════════════════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--nav-h) + 1rem)}
+body{
+  background:var(--bg);color:var(--fg);
+  font:400 1.0625rem/1.65 var(--font-b);letter-spacing:-.01em;
+  font-feature-settings:"ss01","ss02","cv11","calt" 1;
+  -webkit-font-smoothing:antialiased;overflow-x:clip;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+img,video,iframe{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--fg);outline-offset:3px;border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* Efeito ambiente 1 de 2: grão fractal global */
+body::before{content:"";position:fixed;inset:0;z-index:100;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.container{width:min(100% - 2 * var(--gutter), var(--w-grid));margin-inline:auto}
+.container--media{max-width:var(--w-media)}
+.container--form{max-width:var(--w-form)}
+.section{padding-top:var(--sec)}
+/* Renderização preguiçosa das seções abaixo da dobra (economiza CPU no celular) */
+.lazy-render{content-visibility:auto;contain-intrinsic-size:auto 1100px}
+
+/* ═══════════════════════════════════════════════════════════════
+   3. TIPOGRAFIA (peso invertido: quanto maior, mais leve)
+   ═══════════════════════════════════════════════════════════════ */
+.label{display:inline-flex;align-items:center;gap:.6rem;font:600 11px/1.3 var(--font-b);letter-spacing:.2em;text-transform:uppercase;color:var(--fg-2)}
+.h1{font:500 clamp(2.5rem,7vw,5.5rem)/.95 var(--font-d);letter-spacing:-.03em;max-width:15ch;margin-inline:auto;text-wrap:balance}
+.h2{font:500 clamp(2rem,4.5vw,3.5rem)/1.05 var(--font-d);letter-spacing:-.02em;max-width:20ch;margin-inline:auto;text-align:center;text-wrap:balance}
+.lede{max-width:var(--w-text);margin:1.25rem auto 0;text-align:center;color:var(--muted);text-wrap:pretty}
+.lede strong{color:var(--fg);font-weight:500}
+.silver{background:linear-gradient(180deg,#fafafa 0%,#e4e4e7 32%,#a1a1aa 64%,#52525b 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ═══════════════════════════════════════════════════════════════
+   4. COMPONENTES
+   ═══════════════════════════════════════════════════════════════ */
+/* Botão que emite luz: borda da mesma cor do fundo + brilho que cresce no hover */
+.btn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:.15rem;
+  min-height:56px;padding:.9rem 2rem;border-radius:var(--r-pill);cursor:pointer;text-decoration:none;text-align:center;
+  background:#fafafa;border:1px solid #fafafa;color:#050505;font:600 1rem/1.2 var(--font-b);letter-spacing:-.005em;
+  box-shadow:0 0 22px rgba(255,255,255,.18);
+  transition:transform .15s var(--ease),box-shadow .15s var(--ease)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 38px rgba(255,255,255,.34)}
+.btn:active{transform:none}
+.btn small{font:500 .74rem var(--font-b);color:#52525b}
+.btn[disabled]{opacity:.7;cursor:progress;transform:none}
+.btn--sm{min-height:44px;padding:.55rem 1.2rem;font-size:.88rem;white-space:nowrap}
+.btn--ghost{background:transparent;color:var(--fg);border-color:var(--line-m);box-shadow:none}
+.btn--ghost:hover{border-color:var(--line-l);box-shadow:none;background:rgba(255,255,255,.04)}
+.btn .spinner{display:none;width:18px;height:18px;border:2px solid rgba(0,0,0,.2);border-top-color:#000;border-radius:50%;animation:rot .7s linear infinite}
+.btn.is-loading .spinner{display:block}
+.btn.is-loading .btn-label{display:none}
+@keyframes rot{to{transform:rotate(360deg)}}
+
+/* Borda em gradiente por máscara (luz vindo de cima, sem animação contínua) */
+.edge{position:relative;isolation:isolate}
+.edge::before{content:"";position:absolute;inset:0;padding:1px;border-radius:inherit;pointer-events:none;z-index:1;
+  background:linear-gradient(160deg,rgba(255,255,255,.38),rgba(255,255,255,.06) 38%,rgba(255,255,255,.02) 70%,rgba(255,255,255,.14));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude}
+
+.flag{display:inline-block;width:20px;height:14px;border-radius:3px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.2);flex:none}
+.flag svg{width:100%;height:100%;display:block}
+
+/* ═══════════════════════════════════════════════════════════════
+   5. NAV FIXA — logo à esquerda, um botão à direita
+   ═══════════════════════════════════════════════════════════════ */
+.nav{position:sticky;top:0;z-index:50;height:calc(var(--nav-h) + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px);
+  background:rgba(5,5,5,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-s)}
+.nav .container{height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.wordmark{display:inline-flex;align-items:baseline;gap:.45rem;text-decoration:none;font-family:var(--font-d);text-transform:uppercase;white-space:nowrap}
+.wordmark b{font-weight:600;font-size:1.1rem;letter-spacing:.2em}
+.wordmark span{font-weight:500;font-size:.66rem;letter-spacing:.22em;color:var(--muted)}
+.nav .btn .long{display:none}
+@media (min-width:640px){.nav .btn .long{display:inline}.nav .btn .short{display:none}}
+@media (max-width:419px){.nav .wordmark span{display:none}}
+
+/* ═══════════════════════════════════════════════════════════════
+   6. ABERTURA + VSL + CHAMADA DO FORMULÁRIO
+   ═══════════════════════════════════════════════════════════════ */
+.hero{position:relative;padding-top:clamp(2.75rem,7vw,5rem);text-align:center}
+/* Efeito ambiente 2 de 2: auréola atrás do título */
+.hero::before{content:"";position:absolute;inset:-6rem 0 auto;height:42rem;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(255,255,255,.12),transparent 70%)}
+.hero .h1{margin-top:1.5rem}
+
+.vsl-wrap{margin-top:clamp(2.25rem,5vw,3.5rem)}
+.vsl{aspect-ratio:16/9;border-radius:var(--r-block);overflow:hidden;background:var(--bg-3);
+  box-shadow:0 40px 100px -40px rgba(255,255,255,.14),0 30px 60px -30px rgba(0,0,0,.9)}
+.vsl iframe,.vsl video{width:100%;height:100%;border:0;object-fit:cover;background:#000}
+
+.assurance{display:flex;align-items:center;gap:.9rem;margin-top:1rem;padding:1rem 1.25rem;border-radius:var(--r-card);
+  background:var(--bg-2);border:1px solid var(--line-s);text-align:left}
+.assurance svg{flex:none;width:26px;height:26px}
+.assurance p{font-size:.95rem;color:var(--muted)}
+.assurance strong{color:var(--fg);font-weight:500}
+
+.form-card{margin-top:clamp(2.5rem,6vw,4rem);padding:clamp(2rem,5vw,3rem) clamp(1.25rem,4vw,2.5rem);border-radius:var(--r-block);text-align:center;
+  background:linear-gradient(170deg,rgba(255,255,255,.05),rgba(255,255,255,.012));
+  box-shadow:inset 0 14px 30px -18px rgba(0,0,0,.9)}
+.form-card p{max-width:46ch;margin:0 auto 1.75rem;color:var(--muted);font-size:1.0625rem;text-wrap:pretty}
+.form-card p strong{color:var(--fg);font-weight:500}
+.form-card .btn{width:100%;max-width:380px}
+.form-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.25rem;margin-top:1.1rem;font-size:.82rem;color:var(--muted-2)}
+.form-meta span{display:inline-flex;align-items:center;gap:.4rem}
+.form-meta svg{width:14px;height:14px;color:var(--fg-2)}
+
+/* ═══════════════════════════════════════════════════════════════
+   7. RESULTADOS — 12 blocos (2 vídeos + 2 fotos por linha no desktop)
+   ═══════════════════════════════════════════════════════════════ */
+.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.75rem .75rem;margin-top:var(--after-title)}
+@media (min-width:1024px){.media-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:2.5rem 1.25rem}}
+.media{display:flex;flex-direction:column;gap:.8rem;min-width:0}
+/* Card escavado: sombra interna no topo, borda que acende no hover */
+.media-frame{position:relative;display:block;width:100%;aspect-ratio:9/16;border-radius:var(--r-card);overflow:hidden;
+  background:var(--bg-3);border:1px solid var(--line-s);padding:0;
+  box-shadow:inset 0 18px 30px -20px rgba(0,0,0,.95);transition:border-color .15s var(--ease)}
+.media-frame:hover{border-color:var(--line-l)}
+.media-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.media-frame img{width:100%;height:100%;object-fit:cover}
+button.media-frame{cursor:zoom-in}
+.media-tag{position:absolute;top:.6rem;left:.6rem;z-index:2;padding:.25rem .6rem;border-radius:var(--r-pill);
+  background:rgba(5,5,5,.7);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line-m);
+  font:600 10px/1.3 var(--font-b);letter-spacing:.16em;text-transform:uppercase;color:var(--fg-2);pointer-events:none}
+.media-wait,.media-empty{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:.6rem;padding:1rem;text-align:center;font-size:.8rem;color:var(--muted-2)}
+.media-empty svg{width:30px;height:30px;color:var(--fg-2);opacity:.5}
+.facade{cursor:pointer}
+.facade .play{position:absolute;inset:0;margin:auto;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(250,250,250,.92);color:#050505;box-shadow:0 0 30px rgba(255,255,255,.3);transition:transform .15s var(--ease)}
+.facade:hover .play{transform:scale(1.06)}
+.facade .play svg{width:22px;height:22px;margin-left:3px}
+.media-cap{text-align:center;font-size:.86rem;line-height:1.45;color:var(--muted);text-wrap:pretty}
+.media-cap .who{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;margin-bottom:.15rem;color:var(--fg);font:600 .95rem/1.3 var(--font-d)}
+.media-cap .flag{width:18px;height:12px}
+
+/* ═══════════════════════════════════════════════════════════════
+   8. ESCALA + PAÍSES
+   ═══════════════════════════════════════════════════════════════ */
+.scale{text-align:center}
+.countries{margin-top:clamp(2rem,4vw,2.75rem);overflow:hidden;
+  -webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.countries-track{display:flex;gap:.6rem;width:max-content}
+@media (prefers-reduced-motion:no-preference){
+  .countries-track{animation:marquee 55s linear infinite}
+  .countries:hover .countries-track,.countries.is-off .countries-track{animation-play-state:paused}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+}
+.pill{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem 1rem .45rem .5rem;border-radius:var(--r-pill);
+  border:1px solid var(--line-m);background:rgba(255,255,255,.025);font-size:.86rem;font-weight:500;color:var(--fg-2);white-space:nowrap}
+.pill .flag{width:24px;height:16px;border-radius:999px}
+
+/* ═══════════════════════════════════════════════════════════════
+   9. PRINTS — 18 blocos em mosaico
+   ═══════════════════════════════════════════════════════════════ */
+.prints{columns:2;column-gap:.75rem;margin-top:var(--after-title)}
+@media (min-width:720px){.prints{columns:3;column-gap:1rem}}
+@media (min-width:1080px){.prints{columns:4}}
+.print{display:block;width:100%;margin:0 0 .75rem;padding:0;break-inside:avoid;border-radius:var(--r-card);overflow:hidden;
+  border:1px solid var(--line-s);background:var(--bg-3);cursor:zoom-in;transition:border-color .15s var(--ease)}
+@media (min-width:720px){.print{margin-bottom:1rem}}
+.print:hover{border-color:var(--line-l)}
+.print img{width:100%;height:auto}
+.print--empty{cursor:default;aspect-ratio:9/15;display:flex;flex-direction:column;justify-content:flex-end;gap:.5rem;padding:.9rem;
+  box-shadow:inset 0 18px 30px -20px rgba(0,0,0,.95)}
+.print--empty:nth-child(3n+2){aspect-ratio:9/12}
+.print--empty:nth-child(4n+3){aspect-ratio:9/17}
+.print--empty i{display:block;height:24px;width:72%;border-radius:12px 12px 12px 4px;background:rgba(255,255,255,.07)}
+.print--empty i:nth-child(2n){align-self:flex-end;width:56%;border-radius:12px 12px 4px 12px;background:rgba(255,255,255,.13)}
+.more-row{display:flex;justify-content:center;margin-top:1.5rem}
+.more-row[hidden]{display:none}
+.cta-row{display:flex;justify-content:center;margin-top:clamp(2.5rem,5vw,3.5rem)}
+.cta-row .btn{width:100%;max-width:380px}
+
+/* ═══════════════════════════════════════════════════════════════
+   10. RODAPÉ
+   ═══════════════════════════════════════════════════════════════ */
+.footer{margin-top:var(--sec);background:#fafafa;color:#0a0a0a;text-align:center;padding:3rem var(--gutter) calc(2.25rem + env(safe-area-inset-bottom,0px))}
+.footer .wordmark b{color:#0a0a0a}
+.footer .wordmark span{color:#52525b}
+.foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem 1.5rem;margin:1.25rem 0 1rem}
+.foot-links a,.foot-links button{display:inline-flex;align-items:center;min-height:44px;background:none;border:0;cursor:pointer;font-size:.88rem;font-weight:500;color:#18181b;text-decoration:none}
+.foot-links a:hover,.foot-links button:hover{text-decoration:underline}
+.footer p{font-size:.78rem;color:#52525b}
+
+/* ═══════════════════════════════════════════════════════════════
+   11. POPUP DO FORMULÁRIO — uma pergunta por vez
+   ═══════════════════════════════════════════════════════════════ */
+html.modal-open{overflow:hidden}
+.quiz{width:min(620px,calc(100% - 2rem));max-width:none;max-height:calc(100dvh - 2rem);margin:auto;padding:0;border:0;background:transparent;color:var(--fg);overflow:visible}
+.quiz::backdrop{background:rgba(5,5,5,.86);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.quiz-box{display:flex;flex-direction:column;max-height:calc(100dvh - 2rem);overflow-y:auto;overscroll-behavior:contain;
+  padding:1rem clamp(1.25rem,5vw,2.5rem) clamp(1.5rem,5vw,2.25rem);border-radius:var(--r-block);
+  background:linear-gradient(170deg,#161618,var(--bg-2) 60%);box-shadow:0 50px 120px -30px rgba(255,255,255,.12)}
+.quiz-top{display:flex;align-items:center;gap:1rem;margin-bottom:clamp(1.75rem,5vw,2.5rem)}
+.quiz-progress{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.1);overflow:hidden}
+.quiz-progress span{display:block;height:100%;width:0;background:var(--fg);border-radius:inherit;transition:width .5s var(--expo)}
+.quiz-count{font-size:.8rem;font-weight:500;color:var(--muted-2);white-space:nowrap}
+.icon-btn{display:grid;place-items:center;width:44px;height:44px;margin-right:-.6rem;border:0;border-radius:50%;background:transparent;color:var(--muted);cursor:pointer;flex:none}
+.icon-btn:hover{color:var(--fg);background:rgba(255,255,255,.06)}
+.icon-btn svg{width:20px;height:20px}
+.q{display:none;flex-direction:column}
+.q.is-active{display:flex}
+@media (prefers-reduced-motion:no-preference){
+  .q.is-active{animation:qIn .5s var(--expo)}
+  .q.is-active.from-back{animation-name:qBack}
+  @keyframes qIn{from{opacity:0;transform:translateY(22px);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+  @keyframes qBack{from{opacity:0;transform:translateY(-22px);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+}
+.q-title{font:500 clamp(1.5rem,4.4vw,2rem)/1.15 var(--font-d);letter-spacing:-.02em;text-wrap:balance}
+.q-title .req{color:var(--muted-2)}
+.q-help{margin-top:.6rem;color:var(--muted);font-size:.98rem}
+.q-field{margin-top:1.9rem}
+.q-input,.q-select{width:100%;min-height:56px;padding:.5rem 0;border:0;border-bottom:1.5px solid rgba(255,255,255,.25);border-radius:0;background:transparent;
+  color:var(--fg);font:400 clamp(1.25rem,3.6vw,1.55rem)/1.2 var(--font-b);transition:border-color .15s var(--ease)}
+.q-input::placeholder{color:#4a4a50}
+.q-input:focus,.q-select:focus{outline:none;border-bottom-color:var(--fg)}
+.q-select{appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:1.6rem;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%23a3a3a3' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right .2rem center}
+.q-select option{background:var(--bg-2);color:var(--fg);font-size:1rem}
+.phone{display:grid;grid-template-columns:120px minmax(0,1fr);gap:1rem}
+.q.has-error .q-input,.q.has-error .q-select{border-bottom-color:var(--danger)}
+.q-error{margin-top:.75rem;font-size:.88rem;color:var(--danger)}
+.q-error:empty{display:none}
+.opts{display:grid;gap:.6rem;margin-top:1.6rem}
+.opt{display:flex;align-items:center;gap:.9rem;width:100%;min-height:54px;padding:.65rem 1rem;border-radius:var(--r-card);
+  border:1px solid var(--line-m);background:rgba(255,255,255,.025);color:var(--fg-2);font:400 1rem/1.3 var(--font-b);text-align:left;cursor:pointer;
+  transition:border-color .15s var(--ease),background .15s var(--ease)}
+.opt:hover{border-color:var(--line-l);background:rgba(255,255,255,.05)}
+.opt kbd{display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:8px;border:1px solid var(--line-m);font:600 .78rem var(--font-b);color:var(--muted)}
+.opt[aria-checked="true"]{border-color:var(--fg);background:rgba(255,255,255,.09);color:var(--fg)}
+.opt[aria-checked="true"] kbd{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.q-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-top:1.9rem}
+.q-actions .btn{min-height:52px;padding:.75rem 1.8rem}
+.q-hint{font-size:.8rem;color:var(--muted-2)}
+.q-hint kbd{font:600 .78rem var(--font-b);color:var(--fg-2)}
+@media (hover:none){.q-hint{display:none}}
+.q-back{display:inline-flex;align-items:center;margin-left:auto;min-height:44px;padding:0 .4rem;border:0;background:none;color:var(--muted);font:500 .88rem var(--font-b);cursor:pointer}
+.q-back:hover{color:var(--fg)}
+.q-back[hidden]{display:none}
+.q-final .q-actions{flex-direction:column;align-items:stretch;gap:.8rem}
+.q-final .q-actions .btn{min-height:58px;width:100%}
+.q-final .q-back{margin:0 auto}
+.form-legal{font-size:.78rem;color:var(--muted-2);text-align:center}
+.form-alert{display:none;padding:.85rem 1rem;border-radius:var(--r-card);font-size:.9rem;border:1px solid rgba(248,113,113,.4);background:rgba(248,113,113,.08);color:#fecaca}
+.form-alert.is-on{display:block}
+.form-alert a{color:var(--fg);font-weight:600}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.success{display:none;text-align:center;padding:1rem 0}
+.success.is-on{display:block}
+.success:focus{outline:none}
+.success-icon{width:56px;height:56px;margin:0 auto 1rem;border-radius:50%;display:grid;place-items:center;background:var(--fg);color:var(--bg)}
+.success h3{font:500 1.6rem/1.15 var(--font-d);letter-spacing:-.02em}
+.success p{color:var(--muted);margin:.6rem auto 1.5rem;max-width:42ch}
+@media (max-width:600px){
+  .quiz{width:100%;height:100dvh;max-height:100dvh;margin:0}
+  .quiz-box{height:100dvh;max-height:100dvh;border-radius:0;
+    padding:calc(.75rem + env(safe-area-inset-top,0px)) 1.25rem calc(1.25rem + env(safe-area-inset-bottom,0px))}
+  .phone{grid-template-columns:100px minmax(0,1fr);gap:.75rem}
+  .quiz-box::before{display:none}
+}
+
+/* Lightbox (prints e fotos) */
+.lightbox{border:0;padding:0;background:transparent;max-width:min(92vw,760px);max-height:92dvh;margin:auto;color:var(--fg)}
+.lightbox::backdrop{background:rgba(5,5,5,.92)}
+.lightbox img{max-height:84dvh;width:auto;margin:0 auto;border-radius:var(--r-card)}
+.lightbox .btn{margin:1rem auto 0;display:flex;width:max-content}
+
+/* ═══════════════════════════════════════════════════════════════
+   12. REVELAR AO ROLAR — 800ms, curva expo, com desfoque
+   ═══════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion:no-preference){
+  html.js .reveal{animation:reveal .8s var(--expo) both;animation-play-state:paused;animation-delay:calc(var(--d,0) * 80ms)}
+  html.js .reveal.on{animation-play-state:running}
+  @keyframes reveal{from{opacity:0;transform:translateY(30px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ═══════════════════════════════════════════════════════════════
+   13. AJUSTES FINOS DE TELA
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width:420px){
+  .media-cap{font-size:.8rem}
+  .media-cap .who{font-size:.88rem}
+  .assurance{padding:.9rem 1rem}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z9PZGKP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=200096279305740&ev=PageView&noscript=1"></noscript>
+
+<!-- ═══ NAV ═══════════════════════════════════════════════════ -->
+<header class="nav">
+  <div class="container">
+    <a class="wordmark" href="#topo" aria-label="Eikon Ink Marketing — início"><b class="silver">Eikon</b><span>Ink Marketing</span></a>
+    <button type="button" class="btn btn--sm" data-open-form="nav"><span class="short">Agendar análise</span><span class="long">Quero Minha Análise Gratuita</span></button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ═══ ABERTURA + VSL + CHAMADA ═════════════════════════════ -->
+  <section class="hero" aria-labelledby="titulo">
+    <div class="container container--media">
+      <p class="label reveal on">Para tatuadores e estúdios que já têm clientes</p>
+      <h1 id="titulo" class="h1 silver reveal on" style="--d:1">Agenda cheia todo mês, sem depender do boca a boca.</h1>
+
+      <div class="vsl-wrap reveal on" style="--d:2">
+        <div class="vsl edge" id="vsl" aria-label="Vídeo de apresentação da Eikon Ink Marketing"></div>
+        <div class="assurance">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.5 7.5 9.5 4.3-1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p><strong>Contrato mensal, sem fidelidade.</strong> Se não fizer sentido para o seu estúdio, você sai quando quiser.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--form">
+      <div class="form-card edge reveal" id="cadastro">
+        <p>Preencha abaixo e nosso time te chama no WhatsApp para marcar a conversa. <strong>Sem compromisso e sem pressão de venda.</strong></p>
+        <button type="button" class="btn" data-open-form="secao"><span class="btn-label">Quero Minha Análise Gratuita</span></button>
+        <div class="form-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>5 perguntas rápidas</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Sem compromisso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ RESULTADOS: 12 blocos (vídeos + fotos) ═══════════════ -->
+  <section class="section lazy-render" id="resultados" aria-labelledby="t-resultados">
+    <div class="container">
+      <h2 id="t-resultados" class="h2 reveal">Resultados e entrevistas com tatuadores da Eikon</h2>
+      <p class="lede reveal" style="--d:1">A maioria dos tatuadores é excelente na arte e está sozinha no negócio: sem sistema, sem estratégia, dependendo do boca a boca. <strong>Quando ele trava, a agenda trava junto.</strong></p>
+      <div class="media-grid" id="resultados-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══ ESCALA + PAÍSES ══════════════════════════════════════ -->
+  <section class="section scale lazy-render" aria-labelledby="t-escala">
+    <div class="container">
+      <h2 id="t-escala" class="h2 silver reveal">Mais de 140 tatuadores ativos em mais de 30 países usam o Método Eikon — Ano com Agenda.</h2>
+      <p class="lede reveal" style="--d:1">Somos a assessoria de marketing feita só para o mercado da tattoo.</p>
+    </div>
+    <div class="countries" id="countries" aria-label="Países onde atendemos"><div class="countries-track" id="countries-track"></div></div>
+  </section>
+
+  <!-- ═══ PRINTS: 18 blocos ════════════════════════════════════ -->
+  <section class="section lazy-render" id="prints" aria-labelledby="t-prints">
+    <div class="container">
+      <h2 id="t-prints" class="h2 reveal">Prints de resultados enviados pelos clientes</h2>
+      <div class="prints" id="prints-grid"></div>
+      <div class="more-row" id="more-row" hidden><button type="button" class="btn btn--ghost" id="more-btn">Ver mais prints</button></div>
+      <div class="cta-row reveal"><button type="button" class="btn" data-open-form="prints"><span class="btn-label">Quero Minha Análise Gratuita</span><small>Clique aqui e responda 5 perguntas rápidas</small></button></div>
+    </div>
+  </section>
+</main>
+
+<!-- ═══ RODAPÉ ════════════════════════════════════════════════ -->
+<footer class="footer">
+  <span class="wordmark"><b>Eikon</b><span>Ink Marketing</span></span>
+  <nav class="foot-links" aria-label="Rodapé">
+    <button type="button" data-open-form="rodape">Agendar análise</button>
+    <a href="https://www.instagram.com/eikoninkmarketing/" target="_blank" rel="noopener">@eikoninkmarketing</a>
+    <a href="https://www.instagram.com/joaoflavioads/" target="_blank" rel="noopener">@joaoflavioads</a>
+  </nav>
+  <p>© <span id="ano" class="tnum">2026</span> Eikon Ink Marketing. Marketing especializado para tatuadores no Brasil, Europa e EUA.</p>
+</footer>
+
+<!-- ═══ POPUP DO FORMULÁRIO ═══════════════════════════════════ -->
+<dialog class="quiz" id="quiz" aria-labelledby="quiz-title">
+  <div class="quiz-box edge">
+    <h2 class="sr-only" id="quiz-title">Agende sua análise estratégica gratuita</h2>
+    <div class="quiz-top">
+      <div class="quiz-progress" role="progressbar" aria-label="Progresso do formulário" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span id="quiz-bar"></span></div>
+      <span class="quiz-count tnum" id="quiz-count">1 de 5</span>
+      <button type="button" class="icon-btn" id="quiz-close" aria-label="Fechar formulário"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/></svg></button>
+    </div>
+
+    <form id="lead-form" novalidate>
+      <div class="hp" aria-hidden="true"><label for="f-site">Site</label><input id="f-site" name="site" type="text" tabindex="-1" autocomplete="off"></div>
+
+      <div class="q" data-step="1">
+        <label class="q-title" for="f-nome">Qual é o seu nome completo? <span class="req">*</span></label>
+        <div class="q-field"><input class="q-input" id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Digite seu nome"></div>
+        <p class="q-error" aria-live="polite"></p>
+        <div class="q-actions"><button class="btn" type="submit">OK</button><span class="q-hint">ou pressione <kbd>Enter ↵</kbd></span></div>
+      </div>
+
+      <div class="q" data-step="2">
+        <label class="q-title" for="f-tel" id="t-tel">Qual é o seu WhatsApp? <span class="req">*</span></label>
+        <p class="q-help">É por aqui que nosso time vai te chamar para marcar a conversa.</p>
+        <div class="q-field phone">
+          <select class="q-select" id="f-ddi" name="ddi" aria-label="Código do país"></select>
+          <input class="q-input tnum" id="f-tel" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(00) 00000-0000">
+        </div>
+        <p class="q-error" aria-live="polite"></p>
+        <div class="q-actions"><button class="btn" type="submit">OK</button><span class="q-hint">ou pressione <kbd>Enter ↵</kbd></span><button type="button" class="q-back" data-back>← Voltar</button></div>
+      </div>
+
+      <div class="q" data-step="3">
+        <label class="q-title" for="f-email">Qual é o seu melhor e-mail? <span class="req">*</span></label>
+        <div class="q-field"><input class="q-input" id="f-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" placeholder="voce@email.com"></div>
+        <p class="q-error" aria-live="polite"></p>
+        <div class="q-actions"><button class="btn" type="submit">OK</button><span class="q-hint">ou pressione <kbd>Enter ↵</kbd></span><button type="button" class="q-back" data-back>← Voltar</button></div>
+      </div>
+
+      <div class="q" data-step="4">
+        <label class="q-title" for="f-insta">Qual é o @ do seu Instagram ou o nome do estúdio? <span class="req">*</span></label>
+        <div class="q-field"><input class="q-input" id="f-insta" name="instagram" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="@seuestudio"></div>
+        <p class="q-error" aria-live="polite"></p>
+        <div class="q-actions"><button class="btn" type="submit">OK</button><span class="q-hint">ou pressione <kbd>Enter ↵</kbd></span><button type="button" class="q-back" data-back>← Voltar</button></div>
+      </div>
+
+      <div class="q q-final" data-step="5">
+        <p class="q-title" id="t-fat">Faturamento médio mensal com tatuagem (últimos 3 meses) <span class="req">*</span></p>
+        <div class="opts" id="f-fat" role="radiogroup" aria-labelledby="t-fat"></div>
+        <p class="q-error" aria-live="polite"></p>
+        <div class="q-actions">
+          <p class="form-alert" id="form-alert" role="alert"></p>
+          <button class="btn" type="submit" id="f-submit"><span class="btn-label">Quero Minha Análise Gratuita</span><span class="spinner" aria-hidden="true"></span></button>
+          <p class="form-legal">Ao enviar, você concorda em receber contato da Eikon Ink Marketing pelo WhatsApp e e-mail.</p>
+          <button type="button" class="q-back" data-back>← Voltar</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="success" id="success" tabindex="-1">
+      <div class="success-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12.5 4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h3 id="success-title">Recebemos seus dados.</h3>
+      <p id="success-text">Nosso time vai te chamar no WhatsApp para marcar sua análise.</p>
+      <a class="btn btn--ghost" id="success-wa" href="#" target="_blank" rel="noopener">Falar agora no WhatsApp</a>
+    </div>
+  </div>
+</dialog>
+
+<!-- ═══ LIGHTBOX ══════════════════════════════════════════════ -->
+<dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
+  <img alt="" id="lightbox-img">
+  <button type="button" class="btn btn--ghost btn--sm" id="lightbox-close">Fechar</button>
+</dialog>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   CONFIGURAÇÃO — tudo que você edita fica aqui
+   ═══════════════════════════════════════════════════════════════ */
+const CONFIG = {
+  // TROQUE: URL que recebe o cadastro (POST JSON) — rota do seu CRM, webhook do Zapier/Make.
+  // Vazio = o lead só chega se a pessoa confirmar pelo WhatsApp na tela de sucesso.
+  endpoint: '',
+
+  // Páginas de obrigado (opcional). Se preencher, redireciona e o Pixel deve disparar LÁ.
+  obrigado: '',
+  obrigadoQualificado: '',
+
+  whatsapp: '5562999281417',
+
+  // TROQUE: ID do player da VSL na VTurb. Vazio = usa o MP4 abaixo.
+  vslVturbId: '',
+  vslMp4: 'https://eikoninkmarketing.com.br/wp-content/uploads/2026/05/HEROSERVICO1video-3.mp4',
+  vslPoster: '', // TROQUE: imagem de capa da VSL (16:9) — evita tela preta antes do play
+
+  vturbConta: '6924efa6-6db1-48a2-a62a-9b14ee9dce10',
+};
+
+/* RESULTADOS — 12 blocos. No desktop cada linha mostra 2 vídeos + 2 fotos; no celular, 2 por linha.
+   Vídeo:  id = ID do player VTurb. "capa" (opcional, 9:16) faz o player só carregar no clique → página mais leve.
+   Foto:   src = URL da imagem do depoimento (9:16 ou 4:5 no seu domínio). Abre ampliada ao tocar.
+   TROQUE "resultado" pelo número real de cada cliente (ex.: "fechou 47 sessões em 30 dias"). */
+const RESULTADOS = [
+  { tipo:'video',  id:'6a037bc4319b5efaa4281578', capa:'', nome:'Japa Tattoo',   pais:'Portugal',       resultado:'conta como passou a ter cliente chegando pela internet.' },
+  { tipo:'video',  id:'6a037bc84d6e3177e1f80593', capa:'', nome:'Bruno CP',      pais:'Noruega',        resultado:'mostra como ficou a agenda depois da Eikon.' },
+  { tipo:'imagem', src:'', nome:'', pais:'', resultado:'' },
+  { tipo:'imagem', src:'', nome:'', pais:'', resultado:'' },
+
+  { tipo:'video',  id:'6a03bc69f7dfb345ee3b5403', capa:'', nome:'Vinny Tattoo',  pais:'Estados Unidos', resultado:'conta o que mudou na captação de clientes.' },
+  { tipo:'video',  id:'6a03bc6508dd22f8e6183054', capa:'', nome:'Aryel Tattoo',  pais:'Portugal',       resultado:'fala sobre ter agendamento com constância.' },
+  { tipo:'imagem', src:'', nome:'', pais:'', resultado:'' },
+  { tipo:'imagem', src:'', nome:'', pais:'', resultado:'' },
+
+  { tipo:'video',  id:'6a03bc62f18251980df1b4d2', capa:'', nome:'Danilo Santos', pais:'Inglaterra',     resultado:'conta como saiu da dependência do boca a boca.' },
+  { tipo:'video',  id:'', capa:'', nome:'', pais:'', resultado:'' }, // TROQUE: 6º vídeo
+  { tipo:'imagem', src:'', nome:'', pais:'', resultado:'' },
+  { tipo:'imagem', src:'', nome:'', pais:'', resultado:'' },
+];
+
+/* PRINTS — 18 blocos. Cole uma URL por linha (ideal: .webp até 1080px de largura, 80–150 KB).
+   Lista vazia = 18 molduras de exemplo. Acima de 18, aparece o botão "Ver mais prints". */
+const PRINTS = [
+  // 'https://eikoninkmarketing.com.br/wp-content/uploads/2026/10/print-01.webp',
+];
+const PRINTS_POR_VEZ = 18;
+
+const PAISES_FAIXA = ['Brasil','Portugal','Espanha','Irlanda','França','Itália','Bélgica','Alemanha','Suíça','Holanda','Áustria','Noruega','Inglaterra','Estados Unidos'];
+
+const FLAGS = {"Irlanda": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#169B62\" height=\"40\" width=\"20\"></rect><rect fill=\"#fff\" height=\"40\" width=\"20\" x=\"20\"></rect><rect fill=\"#FF883E\" height=\"40\" width=\"20\" x=\"40\"></rect></svg>", "França": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#002654\" height=\"40\" width=\"20\"></rect><rect fill=\"#fff\" height=\"40\" width=\"20\" x=\"20\"></rect><rect fill=\"#CE1126\" height=\"40\" width=\"20\" x=\"40\"></rect></svg>", "Espanha": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#AA151B\" height=\"40\" width=\"60\"></rect><rect fill=\"#F1BF00\" height=\"20\" width=\"60\" y=\"10\"></rect></svg>", "Itália": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#009246\" height=\"40\" width=\"20\"></rect><rect fill=\"#fff\" height=\"40\" width=\"20\" x=\"20\"></rect><rect fill=\"#CE2B37\" height=\"40\" width=\"20\" x=\"40\"></rect></svg>", "Bélgica": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#000\" height=\"40\" width=\"20\"></rect><rect fill=\"#FAE042\" height=\"40\" width=\"20\" x=\"20\"></rect><rect fill=\"#ED2939\" height=\"40\" width=\"20\" x=\"40\"></rect></svg>", "Alemanha": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#000\" height=\"13.33\" width=\"60\"></rect><rect fill=\"#DD0000\" height=\"13.33\" width=\"60\" y=\"13.33\"></rect><rect fill=\"#FFCE00\" height=\"13.34\" width=\"60\" y=\"26.66\"></rect></svg>", "Suíça": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#D52B1E\" height=\"40\" width=\"60\"></rect><rect fill=\"#fff\" height=\"22\" width=\"8\" x=\"26\" y=\"9\"></rect><rect fill=\"#fff\" height=\"8\" width=\"22\" x=\"19\" y=\"16\"></rect></svg>", "Holanda": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#AE1C28\" height=\"13.33\" width=\"60\"></rect><rect fill=\"#fff\" height=\"13.33\" width=\"60\" y=\"13.33\"></rect><rect fill=\"#21468B\" height=\"13.34\" width=\"60\" y=\"26.66\"></rect></svg>", "Brasil": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#009C3B\" height=\"40\" width=\"60\"></rect><polygon fill=\"#FFDF00\" points=\"30,5 55,20 30,35 5,20\"></polygon><circle cx=\"30\" cy=\"20\" fill=\"#002776\" r=\"7\"></circle></svg>", "Áustria": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#ED2939\" height=\"13.33\" width=\"60\"></rect><rect fill=\"#fff\" height=\"13.33\" width=\"60\" y=\"13.33\"></rect><rect fill=\"#ED2939\" height=\"13.34\" width=\"60\" y=\"26.66\"></rect></svg>", "Portugal": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#006600\" height=\"40\" width=\"24\"></rect><rect fill=\"#FF0000\" height=\"40\" width=\"36\" x=\"24\"></rect><circle cx=\"24\" cy=\"20\" fill=\"#FFD700\" r=\"7\" stroke=\"#000\" stroke-width=\".6\"></circle></svg>", "Noruega": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#EF2B2D\" height=\"40\" width=\"60\"></rect><rect fill=\"#fff\" height=\"40\" width=\"6\" x=\"16\"></rect><rect fill=\"#fff\" height=\"6\" width=\"60\" y=\"17\"></rect><rect fill=\"#002868\" height=\"40\" width=\"3\" x=\"17.5\"></rect><rect fill=\"#002868\" height=\"3\" width=\"60\" y=\"18.5\"></rect></svg>", "Estados Unidos": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#B22234\" height=\"40\" width=\"60\"></rect><rect fill=\"#fff\" height=\"3.08\" width=\"60\" y=\"3.08\"></rect><rect fill=\"#fff\" height=\"3.08\" width=\"60\" y=\"9.23\"></rect><rect fill=\"#fff\" height=\"3.08\" width=\"60\" y=\"15.38\"></rect><rect fill=\"#fff\" height=\"3.08\" width=\"60\" y=\"21.54\"></rect><rect fill=\"#fff\" height=\"3.08\" width=\"60\" y=\"27.69\"></rect><rect fill=\"#fff\" height=\"3.08\" width=\"60\" y=\"33.85\"></rect><rect fill=\"#3C3B6E\" height=\"21.54\" width=\"24\"></rect></svg>", "Inglaterra": "<svg preserveAspectRatio=\"none\" viewBox=\"0 0 60 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect fill=\"#fff\" height=\"40\" width=\"60\"></rect><rect fill=\"#CE1124\" height=\"40\" width=\"12\" x=\"24\"></rect><rect fill=\"#CE1124\" height=\"12\" width=\"60\" y=\"14\"></rect></svg>"};
+
+/* ═══════════════════════════════════════════════════════════════
+   NÃO PRECISA EDITAR DAQUI PRA BAIXO
+   ═══════════════════════════════════════════════════════════════ */
+(function(){
+'use strict';
+
+/* ── Utilitários ── */
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const flag = p => FLAGS[p] ? `<span class="flag" role="img" aria-label="${esc(p)}">${FLAGS[p]}</span>` : '';
+const uuid = () => (crypto.randomUUID ? crypto.randomUUID() : 'eik_' + Date.now() + '_' + Math.random().toString(36).slice(2,10));
+const dl = (event, params) => { try { (window.dataLayer = window.dataLayer || []).push(Object.assign({event}, params || {})); } catch(e){} };
+const cookie = n => (document.cookie.match('(^|;)\\s*' + n + '=([^;]*)') || [])[2] || '';
+const vturbSrc = id => `https://scripts.converteai.net/${CONFIG.vturbConta}/players/${encodeURIComponent(id)}/v4/embed.html${location.search || '?'}&vl=${encodeURIComponent(location.href)}`;
+$('#ano').textContent = new Date().getFullYear();
+
+/* ── Rastreio: UTMs persistidas por 30 dias (último toque) ── */
+const CHAVES = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid','gclid'];
+let rastreio = {};
+try {
+  const q = new URLSearchParams(location.search); let veio = false;
+  CHAVES.forEach(k => { const v = q.get(k); if (v) { rastreio[k] = v.slice(0,300); veio = true; } });
+  if (veio) localStorage.setItem('eikon_rastreio', JSON.stringify({em:Date.now(), dados:rastreio}));
+  else { const g = JSON.parse(localStorage.getItem('eikon_rastreio') || 'null'); if (g && Date.now() - g.em < 30*864e5) rastreio = g.dados || {}; }
+} catch(e) {}
+const origemTexto = () => {
+  const c = v => (v || '').slice(0,60);
+  return [[c(rastreio.utm_source), c(rastreio.utm_medium)].filter(Boolean).join('/'), c(rastreio.utm_campaign), c(rastreio.utm_term), c(rastreio.utm_content)]
+    .filter(Boolean).join(' | ') || (rastreio.fbclid ? 'anuncio Meta' : rastreio.gclid ? 'anuncio Google' : '');
+};
+const fbc = () => cookie('_fbc') || (rastreio.fbclid ? `fb.1.${Date.now()}.${rastreio.fbclid}` : '');
+const waLink = texto => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(texto)}`;
+
+/* ── Lightbox compartilhado (prints e fotos de depoimento) ── */
+const lb = $('#lightbox'), lbImg = $('#lightbox-img');
+function ampliar(src, alt) {
+  lbImg.src = src; lbImg.alt = alt || '';
+  if (lb.showModal) lb.showModal(); else window.open(src, '_blank', 'noopener');
+}
+$('#lightbox-close').addEventListener('click', () => lb.close());
+lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+/* ── VSL ── */
+(function(){
+  const box = $('#vsl');
+  box.innerHTML = CONFIG.vslVturbId
+    ? `<iframe title="Vídeo de apresentação da Eikon Ink Marketing" allow="autoplay; fullscreen" allowfullscreen referrerpolicy="origin" src="${vturbSrc(CONFIG.vslVturbId)}"></iframe>`
+    : `<video controls playsinline preload="metadata"${CONFIG.vslPoster ? ` poster="${esc(CONFIG.vslPoster)}"` : ''}><source src="${esc(CONFIG.vslMp4)}" type="video/mp4"></video>`;
+})();
+
+/* ── RESULTADOS: 12 blocos ── */
+(function(){
+  const grid = $('#resultados-grid');
+  const ICONE_VIDEO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9.5 5 2.5-5 2.5z" fill="currentColor"/></svg>';
+  const ICONE_FOTO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-8 9"/></svg>';
+  const PLAY = '<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span>';
+
+  const legenda = r => r.nome ? `<p class="media-cap"><span class="who">${flag(r.pais)}${esc(r.nome)}</span>${r.resultado ? '<br>' + esc(r.resultado) : ''}</p>` : '';
+
+  grid.innerHTML = RESULTADOS.map((r, i) => {
+    const d = i % 4;
+    let frame;
+    if (r.tipo === 'video') {
+      if (!r.id) frame = `<div class="media-frame"><span class="media-tag">Vídeo</span><div class="media-empty">${ICONE_VIDEO}Vídeo de depoimento</div></div>`;
+      else if (r.capa) frame = `<button type="button" class="media-frame facade" data-vid="${esc(r.id)}" aria-label="Assistir entrevista com ${esc(r.nome)}"><span class="media-tag">Vídeo</span><img src="${esc(r.capa)}" alt="" loading="lazy" decoding="async">${PLAY}</button>`;
+      else frame = `<div class="media-frame"><span class="media-wait">Carregando vídeo…</span><iframe title="Entrevista com ${esc(r.nome)}" data-vid="${esc(r.id)}" allow="autoplay; fullscreen" allowfullscreen referrerpolicy="origin"></iframe></div>`;
+    } else {
+      frame = r.src
+        ? `<button type="button" class="media-frame" data-full="${esc(r.src)}" aria-label="Ampliar depoimento${r.nome ? ' de ' + esc(r.nome) : ''}"><span class="media-tag">Foto</span><img src="${esc(r.src)}" alt="Depoimento${r.nome ? ' de ' + esc(r.nome) : ''} para a Eikon" loading="lazy" decoding="async"></button>`
+        : `<div class="media-frame"><span class="media-tag">Foto</span><div class="media-empty">${ICONE_FOTO}Foto de depoimento</div></div>`;
+    }
+    return `<article class="media reveal" style="--d:${d}">${frame}${legenda(r)}</article>`;
+  }).join('');
+
+  // Foto: amplia ao tocar | Vídeo com capa: troca a capa pelo player só no clique
+  grid.addEventListener('click', e => {
+    const foto = e.target.closest('[data-full]');
+    if (foto) { ampliar(foto.dataset.full, foto.querySelector('img').alt); return; }
+    const f = e.target.closest('.facade');
+    if (f) {
+      const box = document.createElement('div'); box.className = 'media-frame';
+      box.innerHTML = `<iframe title="${esc(f.getAttribute('aria-label'))}" allow="autoplay; fullscreen" allowfullscreen referrerpolicy="origin" src="${vturbSrc(f.dataset.vid)}"></iframe>`;
+      f.replaceWith(box); dl('video_play', {video_id:f.dataset.vid});
+    }
+  });
+  grid.querySelectorAll('img').forEach(img => img.addEventListener('error', () => {
+    const fr = img.closest('.media-frame'); if (fr) fr.innerHTML = `<div class="media-empty">${ICONE_FOTO}Imagem indisponível</div>`;
+  }, {once:true}));
+
+  // Vídeos sem capa: carregam perto da tela, um por vez (evita travar o celular)
+  const frames = $$('iframe[data-vid]', grid);
+  const carregar = f => { f.src = vturbSrc(f.dataset.vid); f.removeAttribute('data-vid'); };
+  if (!('IntersectionObserver' in window)) { frames.forEach(carregar); return; }
+  const fila = []; let ocupado = false;
+  const bomba = () => { if (ocupado) return; const f = fila.shift(); if (!f) return; ocupado = true; carregar(f); setTimeout(() => { ocupado = false; bomba(); }, 450); };
+  const io = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { fila.push(e.target); io.unobserve(e.target); } }); bomba(); }, {rootMargin:'400px 0px'});
+  frames.forEach(f => io.observe(f));
+})();
+
+/* ── Países (faixa pausa quando sai da tela) ── */
+(function(){
+  const pills = PAISES_FAIXA.map(p => `<span class="pill">${flag(p)}${esc(p)}</span>`).join('');
+  $('#countries-track').innerHTML = pills + `<span aria-hidden="true" style="display:contents">${pills}</span>`;
+  if ('IntersectionObserver' in window) {
+    const box = $('#countries');
+    new IntersectionObserver(([e]) => box.classList.toggle('is-off', !e.isIntersecting)).observe(box);
+  }
+})();
+
+/* ── PRINTS: 18 blocos + "ver mais" ── */
+(function(){
+  const grid = $('#prints-grid'), moreRow = $('#more-row'), moreBtn = $('#more-btn');
+  const lista = PRINTS.map(s => typeof s === 'string' ? s.trim() : (s && s.src) || '').filter(Boolean);
+  if (!lista.length) {
+    grid.innerHTML = '<div class="print print--empty" aria-hidden="true"><i></i><i></i><i></i><i></i></div>'.repeat(PRINTS_POR_VEZ);
+    return;
+  }
+  let mostrados = 0;
+  const mostrar = () => {
+    const lote = lista.slice(mostrados, mostrados + PRINTS_POR_VEZ);
+    grid.insertAdjacentHTML('beforeend', lote.map((src, i) =>
+      `<button type="button" class="print" data-full="${esc(src)}" aria-label="Ampliar print ${mostrados + i + 1}"><img src="${esc(src)}" alt="Print de resultado de cliente da Eikon" loading="lazy" decoding="async"></button>`).join(''));
+    $$('button.print img:not([data-ok])', grid).forEach(img => { img.dataset.ok = '1'; img.addEventListener('error', () => img.closest('.print').remove(), {once:true}); });
+    mostrados += lote.length;
+    moreRow.hidden = mostrados >= lista.length;
+    if (!moreRow.hidden) moreBtn.textContent = `Ver mais prints (${lista.length - mostrados})`;
+  };
+  mostrar();
+  moreBtn.addEventListener('click', () => { const antes = grid.children.length; mostrar(); dl('ver_mais_prints', {mostrados}); const prox = grid.children[antes]; prox && prox.focus({preventScroll:true}); });
+  grid.addEventListener('click', e => { const b = e.target.closest('[data-full]'); if (b) ampliar(b.dataset.full, b.querySelector('img').alt); });
+})();
+
+/* ── Revelar ao rolar (threshold .15, escalonado por --d) ── */
+(function(){
+  const els = $$('.reveal:not(.on)');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) { els.forEach(el => el.classList.add('on')); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), {threshold:.15, rootMargin:'0px 0px -8% 0px'});
+  els.forEach(el => io.observe(el));
+})();
+
+/* ── ViewContent em 50% de scroll (público de remarketing) ── */
+(function(){
+  let feito = false, tick = false;
+  addEventListener('scroll', () => {
+    if (feito || tick) return; tick = true;
+    requestAnimationFrame(() => {
+      const h = document.documentElement.scrollHeight - innerHeight;
+      if (h > 0 && scrollY / h >= .5) {
+        feito = true; const id = uuid();
+        if (window.fbq) fbq('track', 'ViewContent', {content_name:'LP VSL Eikon - 50% Scroll', content_type:'service'}, {eventID:id});
+        dl('scroll_50', {content_name:'LP VSL Eikon', event_id:id});
+      }
+      tick = false;
+    });
+  }, {passive:true});
+})();
+
+/* ═════════════ FORMULÁRIO EM POPUP — uma pergunta por vez ═════════════ */
+const DDIS = [
+  {c:'55', s:'BR'}, {c:'351', s:'PT'}, {c:'34', s:'ES'}, {c:'1', s:'US'}, {c:'44', s:'UK'}, {c:'353', s:'IE'},
+  {c:'33', s:'FR'}, {c:'39', s:'IT'}, {c:'49', s:'DE'}, {c:'41', s:'CH'}, {c:'31', s:'NL'}, {c:'32', s:'BE'},
+  {c:'43', s:'AT'}, {c:'47', s:'NO'},
+];
+const ZONA_DDI = {'Europe/Lisbon':'351','Europe/Madrid':'34','Europe/London':'44','Europe/Dublin':'353','Europe/Paris':'33','Europe/Rome':'39','Europe/Berlin':'49','Europe/Zurich':'41','Europe/Amsterdam':'31','Europe/Brussels':'32','Europe/Vienna':'43','Europe/Oslo':'47','America/New_York':'1','America/Chicago':'1','America/Denver':'1','America/Los_Angeles':'1'};
+const moeda = ddi => ddi === '55' ? 'R$' : ddi === '1' ? 'US$' : ddi === '44' ? '£' : '€';
+// Corte de lead qualificado: BR a partir de R$ 10 mil / exterior a partir de 5 mil
+const faixas = ddi => {
+  if (ddi === '55') return [
+    {v:'A', t:'Ainda não faturo com tatuagem', q:false},
+    {v:'B', t:'Até R$ 5 mil', q:false},
+    {v:'C', t:'De R$ 5 mil a R$ 10 mil', q:false},
+    {v:'D', t:'De R$ 10 mil a R$ 20 mil', q:true},
+    {v:'E', t:'De R$ 20 mil a R$ 30 mil', q:true},
+    {v:'F', t:'Acima de R$ 30 mil', q:true},
+  ];
+  const m = moeda(ddi);
+  return [
+    {v:'A', t:'Ainda não faturo com tatuagem', q:false},
+    {v:'B', t:`Até ${m} 2 mil`, q:false},
+    {v:'C', t:`De ${m} 2 mil a ${m} 5 mil`, q:false},
+    {v:'D', t:`De ${m} 5 mil a ${m} 10 mil`, q:true},
+    {v:'E', t:`Acima de ${m} 10 mil`, q:true},
+  ];
+};
+
+const quiz = $('#quiz'), form = $('#lead-form'), steps = $$('.q', form), TOTAL = steps.length;
+const selDdi = $('#f-ddi'), tel = $('#f-tel'), opts = $('#f-fat'), btn = $('#f-submit'), alerta = $('#form-alert');
+const NOMES_ETAPA = ['nome','whatsapp','email','instagram','faturamento'];
+let atual = 0, faturamento = '', enviado = false;
+
+selDdi.innerHTML = DDIS.map(d => `<option value="${d.c}">${d.s} +${d.c}</option>`).join('');
+try { const z = Intl.DateTimeFormat().resolvedOptions().timeZone; if (ZONA_DDI[z]) selDdi.value = ZONA_DDI[z]; } catch(e) {}
+
+function montarFaixas() {
+  const lista = faixas(selDdi.value);
+  if (!lista.some(f => f.v === faturamento)) faturamento = '';
+  opts.innerHTML = lista.map(f => `<button type="button" class="opt" role="radio" aria-checked="${f.v === faturamento}" data-v="${f.v}"><kbd>${f.v}</kbd><span>${f.t}</span></button>`).join('');
+  tel.placeholder = selDdi.value === '55' ? '(00) 00000-0000' : 'Número com código de área';
+}
+montarFaixas();
+selDdi.addEventListener('change', () => { montarFaixas(); tel.value = ''; tel.focus(); });
+
+function escolherFaixa(v) {
+  faturamento = v;
+  $$('.opt', opts).forEach(o => o.setAttribute('aria-checked', String(o.dataset.v === v)));
+  erro(4, '');
+  btn.focus({preventScroll:true});
+}
+opts.addEventListener('click', e => { const o = e.target.closest('.opt'); if (o) escolherFaixa(o.dataset.v); });
+
+// Máscara: Brasil (00) 00000-0000; outros países só dígitos
+tel.addEventListener('input', () => {
+  let d = tel.value.replace(/\D/g, '');
+  if (selDdi.value === '55') {
+    d = d.slice(0, 11);
+    tel.value = d.length > 6 ? `(${d.slice(0,2)}) ${d.slice(2, d.length - 4)}-${d.slice(-4)}` : d.length > 2 ? `(${d.slice(0,2)}) ${d.slice(2)}` : d;
+  } else tel.value = d.slice(0, 14);
+});
+
+const val = {
+  nome: () => $('#f-nome').value.trim().replace(/\s+/g, ' '),
+  digitos: () => tel.value.replace(/\D/g, ''),
+  email: () => $('#f-email').value.trim(),
+  insta: () => $('#f-insta').value.trim(),
+};
+const VALIDAR = [
+  () => val.nome().length < 3 ? 'Digite seu nome completo.' : '',
+  () => {
+    const d = val.digitos(), br = selDdi.value === '55';
+    if (br) return (d.length < 10 || d.length > 11) ? 'Digite o WhatsApp com DDD. Ex.: (62) 99999-9999' : '';
+    return (d.length < 6 || d.length > 14) ? 'Digite o número com código de área.' : '';
+  },
+  () => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val.email()) ? '' : 'Digite um e-mail válido. Ex.: voce@email.com',
+  () => val.insta().replace('@', '').length < 2 ? 'Digite seu @ do Instagram ou o nome do estúdio.' : '',
+  () => faturamento ? '' : 'Escolha uma faixa de faturamento.',
+];
+function erro(i, msg) {
+  const s = steps[i]; s.querySelector('.q-error').textContent = msg;
+  s.classList.toggle('has-error', !!msg);
+  $$('.q-input,.q-select', s).forEach(el => el.setAttribute('aria-invalid', msg ? 'true' : 'false'));
+}
+function focarEtapa(i) {
+  const alvo = i === 4 ? (opts.querySelector('[aria-checked="true"]') || opts.querySelector('.opt')) : steps[i].querySelector('.q-input');
+  setTimeout(() => alvo && alvo.focus({preventScroll:true}), 60);
+}
+function irPara(i, voltando) {
+  atual = Math.max(0, Math.min(TOTAL - 1, i));
+  steps.forEach((s, k) => { s.classList.toggle('is-active', k === atual); s.classList.toggle('from-back', k === atual && !!voltando); });
+  steps.forEach((s, k) => $$('[data-back]', s).forEach(b => b.hidden = k === 0));
+  $('#quiz-bar').style.width = (atual / TOTAL * 100) + '%';
+  $('.quiz-progress').setAttribute('aria-valuenow', String(atual));
+  $('#quiz-count').textContent = `${atual + 1} de ${TOTAL}`;
+  if (atual === 1) {
+    const primeiro = val.nome().split(' ')[0];
+    $('#t-tel').innerHTML = `${primeiro ? esc(primeiro) + ', qual' : 'Qual'} é o seu WhatsApp? <span class="req">*</span>`;
+  }
+  focarEtapa(atual);
+}
+
+function abrir(origem) {
+  if (quiz.open) return;
+  if (quiz.showModal) quiz.showModal(); else quiz.setAttribute('open', '');
+  document.documentElement.classList.add('modal-open');
+  if (!enviado) irPara(atual, false);
+  dl('form_open', {origem});
+  try { if (!sessionStorage.getItem('eik_form_aberto')) { sessionStorage.setItem('eik_form_aberto', '1'); if (window.fbq) fbq('trackCustom', 'AbriuFormulario', {content_name:'LP VSL Eikon'}); } } catch(e) {}
+}
+function fechar() { if (quiz.close) quiz.close(); else { quiz.removeAttribute('open'); document.documentElement.classList.remove('modal-open'); } }
+quiz.addEventListener('close', () => {
+  document.documentElement.classList.remove('modal-open');
+  if (!enviado) dl('form_close', {etapa: atual + 1, campo: NOMES_ETAPA[atual]});
+});
+$('#quiz-close').addEventListener('click', fechar);
+$$('[data-open-form]').forEach(b => b.addEventListener('click', () => { dl('cta_click', {cta_destination:'popup_formulario', cta_posicao:b.dataset.openForm}); abrir(b.dataset.openForm); }));
+$$('[data-back]', form).forEach(b => b.addEventListener('click', () => irPara(atual - 1, true)));
+
+// Atalho na última pergunta: A, B, C… escolhe a faixa
+quiz.addEventListener('keydown', e => {
+  if (atual !== 4 || e.ctrlKey || e.metaKey || e.altKey || /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)) return;
+  const k = e.key.toUpperCase();
+  if (faixas(selDdi.value).some(f => f.v === k)) { e.preventDefault(); escolherFaixa(k); }
+});
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const msg = VALIDAR[atual]();
+  erro(atual, msg);
+  if (msg) { focarEtapa(atual); return; }
+  dl('form_step', {etapa: atual + 1, campo: NOMES_ETAPA[atual]});
+  if (atual < TOTAL - 1) irPara(atual + 1, false);
+  else enviar();
+});
+
+function mensagemWhats(d) {
+  return `Olá! Sou tatuador e quero minha análise estratégica gratuita.\n\nNome: ${d.nome}\nInstagram/estúdio: ${d.instagram}\nFaturamento: ${d.faturamento}` + (origemTexto() ? `\n\n(Origem: ${origemTexto()})` : '');
+}
+
+function sucesso(d, qualificado, eventId) {
+  enviado = true;
+  if (CONFIG.obrigado || CONFIG.obrigadoQualificado) {
+    location.href = (qualificado && CONFIG.obrigadoQualificado) ? CONFIG.obrigadoQualificado : (CONFIG.obrigado || CONFIG.obrigadoQualificado);
+    return;
+  }
+  if (window.fbq) {
+    fbq('track', 'Lead', {content_name:'LP VSL Eikon', lead_qualificado:qualificado}, {eventID:eventId});
+    if (qualificado) fbq('trackCustom', 'LeadQualificado', {content_name:'LP VSL Eikon'}, {eventID:eventId + '_q'});
+  }
+  dl('generate_lead', {form:'lp_vsl_popup', lead_qualificado:qualificado, event_id:eventId});
+  if (qualificado) dl('lead_qualificado', {form:'lp_vsl_popup', event_id:eventId});
+  $('#success-title').textContent = `Recebemos seus dados, ${d.nome.split(' ')[0]}.`;
+  $('#success-text').textContent = CONFIG.endpoint
+    ? 'Nosso time vai te chamar no WhatsApp para marcar sua análise. Se quiser adiantar, mande uma mensagem agora.'
+    : 'Para confirmar seu agendamento, envie a mensagem que já deixamos pronta no WhatsApp.';
+  $('#success-wa').textContent = CONFIG.endpoint ? 'Falar agora no WhatsApp' : 'Confirmar pelo WhatsApp';
+  $('#success-wa').href = waLink(mensagemWhats(d));
+  $('#quiz-bar').style.width = '100%';
+  $('#quiz-count').textContent = 'Concluído';
+  form.hidden = true;
+  const s = $('#success'); s.classList.add('is-on'); s.focus();
+}
+
+async function enviar() {
+  alerta.classList.remove('is-on');
+  if ($('#f-site').value) return; // robô
+  const faixa = faixas(selDdi.value).find(f => f.v === faturamento);
+  const qualificado = !!faixa.q;
+  const eventId = uuid();
+  const insta = val.insta();
+  const dados = {
+    nome: val.nome(),
+    whatsapp: `+${selDdi.value}${val.digitos()}`,
+    ddi: selDdi.value,
+    email: val.email().toLowerCase(),
+    instagram: insta.startsWith('@') || /\s/.test(insta) ? insta : '@' + insta,
+    faturamento: faixa.t,
+    faturamento_codigo: faixa.v,
+    moeda: moeda(selDdi.value),
+    qualificado,
+    utm_source: rastreio.utm_source || '', utm_medium: rastreio.utm_medium || '', utm_campaign: rastreio.utm_campaign || '',
+    utm_term: rastreio.utm_term || '', utm_content: rastreio.utm_content || '',
+    fbclid: rastreio.fbclid || '', gclid: rastreio.gclid || '',
+    fbp: cookie('_fbp'), fbc: fbc(),
+    event_id: eventId,
+    pagina: location.href.split('#')[0],
+    referrer: document.referrer || '',
+    user_agent: navigator.userAgent,
+    enviado_em: new Date().toISOString(),
+  };
+
+  if (!CONFIG.endpoint) { sucesso(dados, qualificado, eventId); return; }
+
+  btn.disabled = true; btn.classList.add('is-loading'); btn.setAttribute('aria-busy', 'true');
+  try {
+    const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), 12000);
+    const r = await fetch(CONFIG.endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(dados), signal:ctrl.signal, keepalive:true});
+    clearTimeout(t);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    sucesso(dados, qualificado, eventId);
+  } catch(err) {
+    console.error('[form] envio falhou:', err);
+    alerta.innerHTML = `Não conseguimos enviar agora. Tente de novo em alguns segundos ou <a href="${waLink(mensagemWhats(dados))}" target="_blank" rel="noopener">envie seus dados pelo WhatsApp</a>.`;
+    alerta.classList.add('is-on');
+    dl('form_erro', {form:'lp_vsl_popup', motivo:String(err).slice(0,100)});
+  } finally {
+    btn.disabled = false; btn.classList.remove('is-loading'); btn.removeAttribute('aria-busy');
+  }
+}
+})();
+</script>
+</body>
+</html>
